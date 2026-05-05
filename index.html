@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robson Ferreira | Portfólio OS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca de Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <main id="desktop">
+        <!-- Widget de Fundo -->
+        
+        <!-- <section id="hero-info">
+            <h1 class="main-title">Robson Ferreira</h1>
+            <p class="main-objective">Transição para Desenvolvimento Full Stack</p>
+        </section> -->
+
+        <section id="hero-info">
+            <h1 class="main-title">Robson Ferreira</h1>
+            <p class="main-objective">Em transição de Carreira para Desenvolvimento Full Stack</p>
+            
+            <div class="skills-chips">
+                <span>HTML5</span> <span>CSS3</span> <span>React</span> <span>PHP</span> <span>ETC...</span>
+            </div>
+        </section>
+
+        <!-- Janela Arrastável: Sobre -->
+        <article id="win-sobre" class="window draggable hidden">
+            <header class="window-header">
+                <div class="header-title">
+                    <i data-lucide="user"></i> <!-- Ícone de Usuário -->
+                    <span>Sobre</span>
+                </div>
+                <button onclick="fecharJanela('win-sobre')" class="btn-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </header>
+            <div class="window-content">
+                <p>
+                    <strong>Objetivo:</strong> Com formação em Análise e Desenvolvimento de Sistemas e aprendizado continuo em tecnologias como HTML5, CSS3, JAVASCRIPT, PHP, REACT e GO, almejo contribuir em projetos desafiadores, sempre com foco em aprender, inovar e entregar resultados de alta qualidade como Programador.
+                </p>
+            </div>
+        </article>
+
+        <!-- Janela Arrastável: Habilidades -->
+        <article id="win-skills" class="window draggable hidden">
+            <header class="window-header">
+                <div class="header-title">
+                    <i data-lucide="code"></i> <!-- Ícone de Código -->
+                    <span>Habilidades</span>
+                </div>
+                <button onclick="fecharJanela('win-skills')" class="btn-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </header>
+            <div class="window-content">
+                
+                <!-- Habilidade: HTML5 / CSS3 -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML5 / CSS3</span>
+                        <span>64%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <!-- A largura (width) define o preenchimento -->
+                        <div class="progress-fill" style="width: 64%; background-color: #e34c26;"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidade: JavaScript / React -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript / React</span>
+                        <span>25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 25%; background-color: #f7df1e;"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidade: PHP -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>PHP</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%; background-color: #777bb4;"></div>
+                    </div>
+                </div>
+
+                <!-- Habilidade: Go -->
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Go</span>
+                        <span>13%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 13%; background-color: #00add8;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Go</span>
+                        <span>13%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 13%; background-color: #00add8;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- Janela Arrastável: Educação -->
+        <article id="win-educacao" class="window draggable hidden">
+            <header class="window-header">
+                <div class="header-title">
+                    <i data-lucide="graduation-cap"></i>
+                    <span>Formação Acadêmica</span>
+                </div>
+                <button onclick="fecharJanela('win-educacao')" class="btn-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </header>
+            <div class="window-content">
+                <div class="edu-item">
+                    <h3>UNIASSELVI - Blumenau-SC.</h3>
+                    <p class="edu-local">Analise e Desenvolvimento de Sistemas/Universidade.</p>
+                    <p class="edu-periodo">Concluído em 2023</p>
+                </div>
+                <hr class="divider">
+                <div class="edu-item">
+                    <h3>ROCKETSEAT</h3>
+                    <p class="edu-local">HTML5, CSS3, JAVASCRIPT, PHP, REACT, etc...</p>
+                    <p class="edu-periodo">Continuo</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Janela Arrastável: Contato -->
+<article id="win-contato" class="window draggable hidden">
+    <header class="window-header">
+        <div class="header-title">
+            <i data-lucide="message-circle"></i>
+            <span>Contato</span>
+        </div>
+        <button onclick="fecharJanela('win-contato')" class="btn-close">
+            <i data-lucide="x"></i>
+        </button>
+    </header>
+    <div class="window-content">
+        <div class="contact-links">
+            <!-- Link LinkedIn -->
+            <a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank" class="contact-item">
+                <i data-lucide="linkedin"></i> LinkedIn
+            </a>
+            
+            <!-- Link E-mail Texto -->
+            <div class="contact-item">
+                <i data-lucide="mail"></i> robsferreira@gmail.com
+            </div>
+
+            <!-- Botão WhatsApp -->
+            <a href="https://wa.me/5515996653508" target="_blank" class="btn-whatsapp">
+                <i data-lucide="phone"></i> Conversar no WhatsApp
+            </a>
+        </div>
+    </div>
+</article>
+
+    </main>
+
+    <!-- Dock com Ícones Modernos -->
+    <nav id="dock">
+        <button class="dock-item animar" onclick="abrirJanela('win-sobre')" title="Sobre">
+            <i data-lucide="user"></i>
+        </button>
+        
+        <!-- Adiciona este botão junto aos outros no Dock -->
+        <button class="dock-item animar" onclick="abrirJanela('win-skills')" title="Habilidades">
+            <i data-lucide="code"></i>
+        </button>
+
+        <!-- Novo item: Educação -->
+        <button class="dock-item animar " onclick="abrirJanela('win-educacao')" title="Educação">
+            <i data-lucide="graduation-cap"></i>
+        </button>
+
+        <!-- Botão de Contato -->
+        <button class="dock-item animar" onclick="abrirJanela('win-contato')" title="Contato">
+            <i data-lucide="message-circle"></i>
+        </button>
+    </nav>
+
+    <script src="script.js"></script>
+    <script>
+        // Inicializa os ícones após carregar a página
+        lucide.createIcons();
+    </script>
+</body>
+</html>
