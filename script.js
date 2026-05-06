@@ -1,23 +1,23 @@
 // 1. Variável global para camadas (z-index)
-let zIndexAtual = 100;[span_4](start_span)[span_4](end_span)
+let zIndexAtual = 100;[cite: 2]
 
 // 2. Funções de Interface
 function abrirJanela(id) {
     const janela = document.getElementById(id);
     if (janela) {
-        janela.classList.remove('hidden');[span_5](start_span)[span_5](end_span)
+        janela.classList.remove('hidden');[cite: 2]
         focarJanela(id);
         
         // Para a animação de pulso no Dock
         const botoes = document.querySelectorAll('.dock-item');
-        botoes.forEach(btn => btn.classList.remove('animar'));[span_6](start_span)[span_6](end_span)
+        botoes.forEach(btn => btn.classList.remove('animar'));[cite: 2]
     }
 }
 
 function fecharJanela(id) {
     const janela = document.getElementById(id);
     if (janela) {
-        janela.classList.add('hidden');[span_7](start_span)[span_7](end_span)
+        janela.classList.add('hidden');[cite: 2]
     }
 }
 
@@ -25,12 +25,12 @@ function focarJanela(id) {
     const janela = document.getElementById(id);
     if (janela) {
         zIndexAtual++;
-        janela.style.zIndex = zIndexAtual;[span_8](start_span)[span_8](end_span)
+        janela.style.zIndex = zIndexAtual;[cite: 2]
     }
 }
 
 // --- LÓGICA UNIVERSAL PARA ARRASTAR (MOUSE + TOUCH) ---
-const windows = document.querySelectorAll('.draggable');[span_9](start_span)[span_9](end_span)
+const windows = document.querySelectorAll('.draggable');[cite: 2]
 
 windows.forEach(win => {
     const header = win.querySelector('.window-header');
